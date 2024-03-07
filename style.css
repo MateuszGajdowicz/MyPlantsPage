@@ -1,0 +1,39 @@
+body{
+    background-color:ForestGreen;
+    }
+#Elements{
+    position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align:center;
+        color:white;
+         max-width: 90%;
+         max-height: 90%
+
+
+    }
+.plantsImages{
+    border-radius: 50%;
+    overflow: hidden;
+    width:150;
+    height:150;}
+.labels{
+    color: white;
+    font-family: Comic Sans MS;
+     }
+
+
+#AccountButton{
+    color: white;
+        background-color: Lime;
+        font-size : 1em;
+        padding : 10px 20px;
+        border-radius:10px;
+        cursor: pointer;
+        transition: background-color 0.5s;
+        }
+
+#AccountButton:hover{
+    background-color: SkyBlue;
+    }
