@@ -1,39 +1,69 @@
-body{
-    background-color:ForestGreen;
+body {
+    background-color: ForestGreen;
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    place-content: center;
+    background: linear-gradient(-45deg, #269900, #228B22, #32CD32, #9fff80, #79ff4d);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
     }
-#Elements{
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#Elements {
     position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align:center;
-        color:white;
-         max-width: 90%;
-         max-height: 90%
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    max-width: 90%;
+    max-height: 90%;
 
 
-    }
-.plantsImages{
+
+.plantsImages {
     border-radius: 50%;
     overflow: hidden;
-    width:150;
-    height:150;}
-.labels{
+    width: 130px;
+    height: 130px;
+    position: relative;
+    display: inline-block;
+}
+
+.plantsImages:hover  {
+    transform: scale(1.1); /* Powiększenie zdjęcia po najechaniu */
+    transition: transform 0.5s ease;
+}
+
+.labels {
     color: white;
-    font-family: Comic Sans MS;
-     }
+    font-size:1.5em;
+}
 
-
-#AccountButton{
+#AccountButton kom{
     color: white;
-        background-color: Lime;
-        font-size : 1em;
-        padding : 10px 20px;
-        border-radius:10px;
-        cursor: pointer;
-        transition: background-color 0.5s;
-        }
+    background-color: Lime;
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
 
-#AccountButton:hover{
+#AccountButton:hover {
     background-color: SkyBlue;
-    }
+}
