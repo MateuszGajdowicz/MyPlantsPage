@@ -1,4 +1,9 @@
+// JavaScript
 window.onload = function() {
-        var NewPlantName = localStorage.getItem("NewPlantName1");
-
-            document.getElementById("plant1label").textContent = NewPlantName;
+    let plantName = localStorage.getItem('plantName');
+    if (plantName) {
+        document.getElementById('plantNameDisplay').textContent = plantName;
+    } else {
+        document.getElementById('plantNameDisplay').textContent = "Plant 1";
+    }
+}
